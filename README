@@ -66,7 +66,7 @@ The book features a comprehensive e-commerce application example, particularly i
 - **Entity Design:**
    - The `Product` entity captures all product details. As products may vary significantly, the author emphasizes designing with flexibility to handle potential null values.
 ### E-Commerce ERD Diagram 
-"D:\JAVA\JAVA Mentorship\DB Schema img\DB_SHEMA_ECOMMERCE.png"
+
 
 8. ** Session Search Summary:
 # Core Database Models - Differences Table
