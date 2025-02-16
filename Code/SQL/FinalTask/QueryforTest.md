@@ -1,4 +1,21 @@
-** Retrieve the total number of products in each category
+# E-Commerce Database Analysis & Optimization
+
+A collection of SQL queries and performance analyses for an e-commerce database system. Demonstrates skills in data retrieval, query optimization, and database performance tuning.
+
+## 📊 Key Analyses
+
+### 1. Product Category Distribution
+**Purpose:** Understand product distribution across categories  
+**Business Value:** Inventory management and category performance analysis
+
+```sql
+-- Retrieve total products per category
+SELECT c.CategoryID, c.CategoryName, COUNT(pc.ProductId) AS ProductCount
+FROM Category c
+LEFT JOIN ProductCategory pc ON c.CategoryID = pc.CategoryID
+GROUP BY c.CategoryID, c.CategoryName;
+
+ Retrieve the total number of products in each category
 SELECT c.CategoryID, c.CategoryName, COUNT(pc.ProductId) AS ProductCount
 FROM Category c
 LEFT JOIN ProductCategory pc ON c.CategoryID = pc.CategoryID
